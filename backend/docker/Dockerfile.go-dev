@@ -1,0 +1,14 @@
+FROM golang:1.16.0-buster
+USER root
+
+WORKDIR /app
+
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y \
+  vim less \
+  zip unzip netcat
+
+RUN go get -u \
+  github.com/cespare/reflex
+
+CMD ["/bin/bash"]

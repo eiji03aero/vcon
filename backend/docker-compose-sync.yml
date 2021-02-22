@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  backend:
+    volumes:
+      - v-sync-vcon-backend:/app:nocopy
+
+volumes:
+  v-sync-vcon-backend:
+    external: true

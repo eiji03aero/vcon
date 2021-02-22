@@ -1,7 +1,7 @@
 # Description
 - Write down tasks ordered by latest
 
-# Milestones
+# Milestone
 - [ ] implement backend
   - initialize codebase
   - signup
@@ -10,10 +10,6 @@
 - [ ] deploy to production
 
 # WIP
-- [ ] initialize backend codebase
-  - docker
-    - workspace
-    - database
 
 # Icebox
 - [ ] add basis for web server
@@ -24,4 +20,12 @@
   - orm tool
   - migration tool
 
+- [ ] implement signup
+
+- [ ] implement login
+
 # Done
+- [x] initialize backend codebase
+  - docker
+    - backend
+    - database

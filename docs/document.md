@@ -9,7 +9,7 @@
 - points
   - what is consumed when have a class
 
-## Features
+## Usecases
 ### end user
 #### signup
 - with email, google account
