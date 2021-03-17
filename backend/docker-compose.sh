@@ -47,6 +47,12 @@ elif [ $cmd = 'stop' ]; then
 
 elif [ $cmd = 'bash-b' ]; then
   execute-docker-compose exec $container_name /bin/bash
+elif [ $cmd = 'bash-p' ]; then
+  execute-docker-compose exec postgres /bin/bash
+
+elif [ $cmd = 'repl-p' ]; then
+  execute-docker-compose exec postgres /bin/bash -c \
+    'psql -U vcon -d vcon'
 
 else
   execute-docker-compose $@

@@ -6,10 +6,18 @@ services:
       context: .
       dockerfile: ./docker/Dockerfile.go-dev
     working_dir: /app/services/backend
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_DATABASE: vcon
+      DB_USERNAME: vcon
+      DB_PASSWORD: vcon
     volumes:
       - .:/app
     ports:
-      - "8080:8080"
+      - "3100:3100"
+    depends_on:
+      - postgres
     tty: true
     command: make run
 

@@ -9,6 +9,7 @@ RUN apt-get install -y \
   zip unzip netcat
 
 RUN go get -u \
-  github.com/cespare/reflex
+  github.com/cespare/reflex \
+  github.com/rubenv/sql-migrate/...
 
 CMD ["/bin/bash"]
